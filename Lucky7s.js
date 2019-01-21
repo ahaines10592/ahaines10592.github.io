@@ -49,6 +49,6 @@ do{
 		}
 
 	document.getElementById("p1").innerHTML=("<center><br><br><table style=\"width: 100% height: 100%;\"><th colspan=\"2\"; class=\"th1\">Results</th><tr><th class=\"th2\">Starting Bet</th><th class=\"th2\">$" + initialBet + ".00</th></tr><tr><td>Total Rolls Before Going Broke</td><td>"+ rollTally +"</td></tr><tr><td>Highes Amount Won</td><td>"+totalMax+"</td></tr><tr><td>Roll Count at Highest Amount Held</td><td>"+ numRolls + "</td></tr></table></center>");
-	document.getElementById("p2").innerHTML="Retry";
+	document.getElementById("p2").innerHTML="Play Again";
 
 }
