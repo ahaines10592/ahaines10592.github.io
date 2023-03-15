@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>Restaurant Information</title>
+    <style>
+      .restaurant-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        background-color: #ddd;
+      }
+      .restaurant-box {
+        background-color: white;
+        border: 1px solid grey;
+        padding: 30px;
+        border-radius: 10px;
+        box-shadow: 5px 5px 10px grey;
+        text-align: center;
+        width: 500px;
+      }
+      h1 {
+        color: #3f51b5;
+      }
+      label,
+      input[type="text"],
+      input[type="tel"] {
+        width: 100%;
+        padding: 10px;
+        margin-top: 20px;
+        border: 1px solid grey;
+        border-radius: 5px;
+        font-size: 16px;
+        box-sizing: border-box;
+      }
+      input[type="file"] {
+        margin-top: 20px;
+      }
+      input[type="submit"] {
+        background-color: #3f51b5;
+        color: white;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        margin-top: 20px;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="restaurant-container">
+      <div class="restaurant-box">
+        <h1>Enter Restaurant Information</h1>
+        <form action="" method="post" enctype="multipart/form-data">
+          <label for="restaurant_name">Restaurant Name:</label>
+          <input type="text" id="restaurant_name" name="restaurant_name">
+          <br>
+          <label for="restaurant_address">Address:</label>
+          <input type="text" id="restaurant_address" name="restaurant_address">
+          <br>
+          <label for="restaurant_phone">Phone:</label>
+          <input type="tel" id="restaurant_phone" name="restaurant_phone">
+          <br>
+          <label for="restaurant_image">Image:</label>
+          <input type="file" id="restaurant_image" name="restaurant_image">
+          <br>
+          <input type="submit" value="Submit">
+        </form>
+      </div>
+    </div>
+  </body>
+</html>

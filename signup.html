@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>SignUp Page</title>
+    <style>
+      .signup-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        background-color: #ddd;
+      }
+      .signup-box {
+        background-color: white;
+        border: 1px solid grey;
+        padding: 30px;
+        border-radius: 10px;
+        box-shadow: 5px 5px 10px grey;
+        text-align: center;
+        width: 500px;
+      }
+      h1 {
+        color: #3f51b5;
+      }
+      input[type="text"],
+      input[type="email"],
+      input[type="password"] {
+        width: 100%;
+        padding: 10px;
+        margin-top: 20px;
+        border: 1px solid grey;
+        border-radius: 5px;
+        font-size: 16px;
+      }
+      input[type="submit"] {
+        background-color: #3f51b5;
+        color: white;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        margin-top: 20px;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="signup-container">
+      <div class="signup-box">
+        <h1>Create an Account</h1>
+        <form action="signup.jsp" method="post">
+          <label for="username">Username:</label>
+          <input type="text" name="username" id="username">
+          <br>
+          <label for="email">Email:</label>
+          <input type="email" name="email" id="email">
+          <br>
+          <label for="password">Password:</label>
+          <input type="password" name="password" id="password">
+          <br>
+          <input type="submit" value="Sign Up">
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
